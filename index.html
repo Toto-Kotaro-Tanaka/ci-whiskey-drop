@@ -15,11 +15,29 @@
 <body>
   <nav class="navbar navbar-light bg-light navbar-expand-sm">
     <a href="/" class="navbar-brand">Whiskey Drop</a>
-    <ul class="navbar-nav mr-auto">
-      <li class="active nav-item mr-2"><a href="/" class="nav-link">Home</a></li>
-      <li class="nav-item mr-2"><a href="/" class="nav-link">About</a></li>
-      <li class="nav-item mr-2 d-sm-none"><a href="/" class="nav-link">Sign In / Sign Up</a></li>
-    </ul>
+
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span
+        class="navbar-toggler-icon"></span></button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="active nav-item mr-2"><a href="/" class="nav-link">Home</a></li>
+        <li class="nav-item mr-2"><a href="/" class="nav-link">About</a></li>
+        <li class="nav-item dropdown">
+          <a href="/" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Whiskey</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Irish</a>
+            <a class="dropdown-item" href="#">Scotch</a>
+            <a class="dropdown-item" href="#">Japanese</a>
+            <a class="dropdown-item" href="#">American</a>
+          </div>
+        </li>
+        <li class="nav-item mr-2 d-sm-none"><a href="/" class="nav-link">Sign In / Sign Up</a></li>
+      </ul>
+    </div>
+
     <div class="d-none d-md-block">
       <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
       <a href="/">Sign In / Sign Up</a>
@@ -44,7 +62,7 @@
             <span class="d-inline d-sm-none"><br></span>
             <s class="d-none d-sm-inline">€19.99</s><strong><mark>First one is free!</mark></strong>
           </p>
-          <button class="btn btn-success btn-lg">Sing Up!</button>
+          <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signup-modal">Sing Up!</button>
           <p class="text-muted"><small>You must be over 18 to sign up. Please drink responsibility</small></p>
         </section>
       </div>
@@ -133,6 +151,38 @@
     </section>
     <!-- /.features -->
   </article>
+
+  <!-- Modal -->
+  <div class="modal" tabindex="-1" role="dialog" id="signup-modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sign Up!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password" required><br>
+              <label for="repeatpassword">Repeat Password</label>
+              <input type="password" class="form-control" id="repeatpassword" placeholder="Repeat Password"
+                required><br>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
