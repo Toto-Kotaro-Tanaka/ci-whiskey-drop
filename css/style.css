@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.alert {
+  margin-bottom: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.alert-warning {
+  padding: 10px;
+  background-color: #ffe05d;
+}
+
+
+.navalert-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 1;
+}
+
+.navbar {
+  margin-bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+.navbar-brand {
+  font-weight: 900;
+}
+
+.callout-container {
+  height: 100vh;
+
+  background: url(../img/whiskey-background.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.oppaque-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron {
+  background-color: transparent;
+  color: #ebebeb;
+}
+
+.jumbotron-lead {
+  margin-bottom: 20px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.jumbotron-small {
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+
+.jumbotron small {
+  color: #ebebeb;
+}
+
+.divider {
+  width: 75px;
+  height: 5px;
+  border: 0;
+}
+
+.divider-short {
+  width: 35;
+}
+
+.divider-orange {
+  background-color: #f05f40;
+}
+
+.divider-gray {
+  background-color: #eee;
+}
+
+
+.btn-cta {
+  border-radius: 23px;
+  width: 160px;
+}
+
+.btn-red {
+  color: #fff;
+  background-color: #f05f40;
+  border-color: #f05f40;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #e83a15;
+  border-color: #e83a15;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.quotes {
+  text-align: center;
+}
+
+.page-header {
+  margin-bottom: 0;
+  border-bottom: 0;
+  text-align: center;
+}
+
+.page-header h2 {
+  margin-top: 50px;
+}
+
+.quotes p {
+  margin-top: 10px;
+}
+
+.features {
+  background-color: #f05f40;
+  text-align: center;
+  padding: 2%;
+  color: #fafafa;
+}
+
+.features h3 {
+  margin: 20px 0;
+}

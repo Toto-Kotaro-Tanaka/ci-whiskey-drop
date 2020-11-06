@@ -13,143 +13,156 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-light bg-light navbar-expand-sm">
-    <a href="/" class="navbar-brand">Whiskey Drop</a>
+  <div class="container-fluid navalert-container">
 
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span
-        class="navbar-toggler-icon"></span></button>
-
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav mr-auto">
-        <li class="active nav-item mr-2"><a href="/" class="nav-link">Home</a></li>
-        <li class="nav-item mr-2"><a href="/" class="nav-link">About</a></li>
-        <li class="nav-item dropdown">
-          <a href="/" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Whiskey</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Irish</a>
-            <a class="dropdown-item" href="#">Scotch</a>
-            <a class="dropdown-item" href="#">Japanese</a>
-            <a class="dropdown-item" href="#">American</a>
+    <div class="container-fluid alert">
+      <div class="row d-none d-sm-block">
+        <div class="col-12">
+          <div class="alert-warning">
+            <strong>Sale Now On!</strong> We've got a sale on. Get 12-month subscription for 6! <a href="/">See here
+              for
+              more details!</a>
           </div>
-        </li>
-        <li class="nav-item mr-2 d-sm-none"><a href="/" class="nav-link">Sign In / Sign Up</a></li>
-      </ul>
-    </div>
-
-    <div class="d-none d-md-block">
-      <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
-      <a href="/">Sign In / Sign Up</a>
-    </div>
-  </nav>
-  <article class="container mt-3">
-    <div class="row d-none d-sm-block">
-      <div class="col-12">
-        <div class="alert alert-warning">
-          <strong>Sale Now On!</strong> We've got a sale on. Get 12-month subscription for 6! <a href="/">See here for
-            more details!</a>
         </div>
       </div>
     </div>
-    <!-- Callout-->
+    <nav class="navbar navbar-dark navbar-expand-sm">
+      <a href="/" class="navbar-brand">Whiskey Drop</a>
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="active nav-item mr-2"><a href="/" class="nav-link">Home</a></li>
+          <li class="nav-item mr-2"><a href="/" class="nav-link">About</a></li>
+          <li class="nav-item dropdown">
+            <a href="/" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Whiskey</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Irish</a>
+              <a class="dropdown-item" href="#">Scotch</a>
+              <a class="dropdown-item" href="#">Japanese</a>
+              <a class="dropdown-item" href="#">American</a>
+            </div>
+          </li>
+          <li class="nav-item mr-2 d-sm-none"><a href="/" class="nav-link">Sign In / Sign Up</a></li>
+        </ul>
+      </div>
+
+      <div class="d-none d-md-block">
+        <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+        <a href="/" class="btn btn-cta btn-red">Sign In / Sign Up</a>
+      </div>
+    </nav>
+  </div>
+  <!-- Callout-->
+  <div class="row callout-container">
+    <div class="oppaque-overlay">&nbsp;</div>
+    <div class="col-12 text-center">
+      <section class="callout jumbotron">
+        <h1>The finest whiskey deliveered to your doorstep.</h1>
+        <hr class="divider divider-orange">
+        <p class="lead jumbotron-lead">
+          Sign up today to start receiving the world's best whiskeys every month.
+          <span class="d-inline d-sm-none"><br></span>
+          <s class="d-none d-sm-inline">€19.99</s> <strong><mark>First one is free!</mark></strong>
+        </p>
+        <button class="btn btn-cta btn-red btn-lg" data-toggle="modal" data-target="#signup-modal">Sing Up!</button>
+        <p class="text-muted jumbotron-small"><small>You must be over 18 to sign up. Please drink
+            responsibility</small>
+        </p>
+      </section>
+    </div>
+  </div>
+  </div>
+  <!-- /.callout -->
+
+  <!-- Quotes -->
+  <section class="quotes">
     <div class="row">
-      <div class="col-12 text-center">
-        <section class="callout jumbotron">
-          <h1>The finest whiskey deliveered to your doorstep.</h1>
-          <p class="lead">
-            Sign up today to start receiving the world's best whiskeys every month.
-            <span class="d-inline d-sm-none"><br></span>
-            <s class="d-none d-sm-inline">€19.99</s><strong><mark>First one is free!</mark></strong>
-          </p>
-          <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signup-modal">Sing Up!</button>
-          <p class="text-muted"><small>You must be over 18 to sign up. Please drink responsibility</small></p>
-        </section>
+      <div class="col-12 page-header">
+        <h2 class="text-uppercase">Quotes:</h2>
+      </div>
+      <hr class="divider divider-short divider-gray">
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="d-none d-sm-block">
+          <img src="img/girl-image.png" class="rounded-circle mr-3" height=100 width=100 alt="">
+        </div>
+        <div class="media-body">
+          <blockquote class="blockquote">
+            <p>
+              I've been introduced to more than 10 great international whiskeys I never knew about.
+            </p>
+            <p>- Jane Doe -</p>
+          </blockquote>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="d-none d-sm-block">
+          <img src="img/guy-image.png" class="rounded-circle mr-3" width=100 alt="">
+        </div>
+        <div class="media-body">
+          <blockquote class="blockquote">
+            <p>
+              I haven't been sober for months!
+            </p>
+            <p>- Jonny Cash -</p>
+          </blockquote>
+        </div>
       </div>
     </div>
-    <!-- /.callout -->
-    <hr>
+  </section>
+  <!-- /.quotes -->
 
-    <!-- Quotes -->
-    <section class="quotes">
-      <div class="row">
-        <div class="col-12 my-5">
-          <h2 class="text-uppercase">Quotes:</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <img src="img/girl-image.png" class="rounded-circle mr-3 d-none d-sm-block" height=100 width=100 alt="">
-          <div class="media-body">
-            <blockquote class="blockquote">
-              <p>
-                I've been introduced to more than 10 great international whiskeys I never knew about.
-              </p>
-              <p>- Jane Doe -</p>
-            </blockquote>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="d-none d-sm-block">
-            <img src="img/guy-image.png" class="rounded-circle mr-3" width=100 alt="">
-          </div>
-          <div class="media-body">
-            <blockquote class="blockquote">
-              <p>
-                I haven't been sober for months!
-              </p>
-              <p>- Jonny Cash -</p>
-            </blockquote>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /.quotes -->
-    <hr>
 
-    <section class="features">
-      <div class="row">
-        <div class="col-12 my-5">
-          <h2 class="text-uppercase features">Features:</h2>
+  <section class="features">
+    <div class="row">
+      <div class="col-12 page-header">
+        <h2 class="text-uppercase features">Features:</h2>
+      </div>
+      <hr class="divider divider-short divider-gray">
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="feature">
+          <h3><i class="fas fa-gift"></i> Feature 1 <span class="badge badge-success">NEW!</span></h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eius nobis earum, nihil ut distinctio
+            modi
+            quidem at aperiam dolor praesentium autem suscipit explicabo dolorem, quaerat adipisci labore, soluta
+            voluptate?
+          </p>
+          <p><a href="" class="btn btn-sm btn-light">Read More</a></p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="feature">
-            <h3><i class="fas fa-gift"></i> Feature 1 <span class="badge badge-success">NEW!</span></h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eius nobis earum, nihil ut distinctio
-              modi
-              quidem at aperiam dolor praesentium autem suscipit explicabo dolorem, quaerat adipisci labore, soluta
-              voluptate?
-            </p>
-            <p><a href="" class="btn btn-sm btn-light">Read More</a></p>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="feature">
-            <h3><i class="fas fa-credit-card"></i> Feature 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat est dicta dolorem numquam nemo, laborum
-              soluta animi error autem totam, odit esse harum delectus? Perferendis aliquid quis est quod ex!
-            </p>
-            <p><a href="" class="btn btn-sm btn-light">Read More</a></p>
-          </div>
-        </div>
-        <div class="col-12 d-md-none d-lg-block col-lg-4">
-          <div class="feture">
-            <h3><i class="fas fa-window-close"></i> Feature 3</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus harum sit veritatis dolor tempore
-              minus
-              exercitationem id, maiores voluptatibus, fuga deserunt plorum, beatae delectus dicta assumenda aperiam.
-            </p>
-            <p><a href="" class="btn btn-sm btn-light">Read More</a></p>
-          </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="feature">
+          <h3><i class="fas fa-credit-card"></i> Feature 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat est dicta dolorem numquam nemo, laborum
+            soluta animi error autem totam, odit esse harum delectus? Perferendis aliquid quis est quod ex!
+          </p>
+          <p><a href="" class="btn btn-sm btn-light">Read More</a></p>
         </div>
       </div>
-    </section>
-    <!-- /.features -->
+      <div class="col-12 d-md-none d-lg-block col-lg-4">
+        <div class="feture">
+          <h3><i class="fas fa-window-close"></i> Feature 3</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus harum sit veritatis dolor tempore
+            minus
+            exercitationem id, maiores voluptatibus, fuga deserunt plorum, beatae delectus dicta assumenda aperiam.
+          </p>
+          <p><a href="" class="btn btn-sm btn-light">Read More</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.features -->
   </article>
 
   <!-- Modal -->
@@ -182,17 +195,16 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
